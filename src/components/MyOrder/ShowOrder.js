@@ -3,7 +3,7 @@ import React from 'react';
 const ShowOrder = ({service}) => {
     const {name,price,images,description,_id} = service;
     const handleDelete =id =>{
-        const url =`http://localhost:5000/orders/${id}`;
+        const url =`https://whispering-hollows-15183.herokuapp.com/orders/${id}`;
         fetch(url,{
             method: 'DELETE'
         })
